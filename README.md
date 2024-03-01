@@ -12,3 +12,7 @@ quando o valor no <b>input</b> estiver ZERO;</p>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="logo-JS" width="85px" height="25px" />  :pushpin:
 
 <img src="https://github.com/andersonpontes88/Conversor-Moedas/blob/master/assets/imgCurrencyMoney.png?raw=true" alt="img-do-projeto-conversor"/>
+
+<h3>Feito a responsividade também</h3>
+<br/>
+<img src="https://github.com/andersonpontes88/Conversor-Moedas/blob/master/assets/CurrencyResponsivo.png?raw=true" alt="img-do-projeto-responsivo"/>
