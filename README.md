@@ -10,3 +10,5 @@ quando o valor no <b>input</b> estiver ZERO;</p>
 <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="logo-html"/>  :pushpin: <br/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt=logo-css/>   :pushpin: <br/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="logo-JS" width="85px" height="25px" />  :pushpin:
+
+<img src="https://github.com/andersonpontes88/Conversor-Moedas/blob/master/assets/imgCurrencyMoney.png?raw=true" alt="img-do-projeto-conversor"/>
