@@ -3,10 +3,12 @@ const convertButton = document.querySelector(".botao-convert")
 const moedaSelect = document.querySelector(".currency-select")
 const firstSelector = document.querySelector(".selector-first")
 
+
 function convertValores() {
     const inputValores = document.querySelector(".input-value").value
     const moedaToConvert = document.querySelector(".value-moeda-to-covert") //Valor para converter
     const moedaConverted = document.querySelector(".value-moeda")
+    const placeValor = document.querySelector(".input-value").placeholder
 
     const dolarToday = 4.96
     const euroToday = 5.38
@@ -96,19 +98,19 @@ function changeMoeda() {
     if (moedaSelect.value == "dolar") {
         nameCurrency.innerHTML = "Dólar americano"
         moedaImage.src = "./assets/dolar-Us.png"
-        iconesText.innerHTML = "US$0.00"
+        iconesText.innerHTML = "US$ 0.00"
     }
 
     if (moedaSelect.value == "euro") {
         nameCurrency.innerHTML = "Euro"
         moedaImage.src = "./assets/euro-icon.png"
-        iconesText.innerHTML = "0.00€"
+        iconesText.innerHTML = "0.00 €"
     }
 
     if (moedaSelect.value == "Real") {
         nameCurrency.innerHTML = "Real brasileiro"
         moedaImage.src = "./assets/real-Brasil.png"
-        iconesText.innerHTML = "R$0.00"
+        iconesText.innerHTML = "R$ 0.00"
     }
 
 
