@@ -8,11 +8,11 @@ function convertValores() {
     const inputValores = document.querySelector(".input-value").value
     const moedaToConvert = document.querySelector(".value-moeda-to-covert") //Valor para converter
     const moedaConverted = document.querySelector(".value-moeda")
-    const placeValor = document.querySelector(".input-value").placeholder
+    
 
     const dolarToday = 4.96
     const euroToday = 5.38
-    const realToday = 1
+    const libraToday = 6.27
 
     if (moedaSelect.value == "dolar") {
         moedaConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -28,7 +28,12 @@ function convertValores() {
         }).format(inputValores / euroToday)
     }
 
-
+    if (moedaSelect.value == "libra") {
+        moedaConverted.innerHTML = new Intl.NumberFormat("it-CH", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputValores / libraToday)
+    }
 
     if (firstSelector.value == "Dólar-U$") {
         moedaConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -42,6 +47,13 @@ function convertValores() {
             style: "currency",
             currency: "BRL"
         }).format(inputValores * euroToday)
+    }
+
+    if (firstSelector.value == "Libra-ES") {
+        moedaConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        }).format(inputValores * libraToday)
     }
 
     if (firstSelector.value == "Dólar-U$") {
@@ -64,6 +76,13 @@ function convertValores() {
             currency: "BRL"
         }).format(inputValores)
     }
+
+    if (firstSelector.value == "Libra-ES") {
+        moedaToConvert.innerHTML = new Intl.NumberFormat("it-CH", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputValores)
+    }
 }
 
 function firstChange() {
@@ -80,13 +99,19 @@ function firstChange() {
     if (firstSelector.value == "Real-BR") {
         textCurrency.innerHTML = "Real brasileiro"
         firstImage.src = "./assets/real-Brasil.png"
-        iconesFirst.innerHTML = "R$$ 0.00"
+        iconesFirst.innerHTML = "R$ 0.00"
     }
 
     if (firstSelector.value == "Euro-DE") {
         textCurrency.innerHTML = "Euro"
         firstImage.src = "./assets/euro-icon.png"
         iconesFirst.innerHTML = "0.00 €"
+    }
+
+    if (firstSelector.value == "Libra-ES") {
+        textCurrency.innerHTML = "Libra"
+        firstImage.src = "./assets/libra-icon.png"
+        iconesFirst.innerHTML = "0.00 £"
     }
 }
 
@@ -113,6 +138,11 @@ function changeMoeda() {
         iconesText.innerHTML = "R$ 0.00"
     }
 
+    if (moedaSelect.value == "libra") {
+        nameCurrency.innerHTML = "Libra"
+        moedaImage.src = "./assets/libra-icon.png"
+        iconesText.innerHTML = "£ 0.00"
+    }
 
     convertValores()
 }
